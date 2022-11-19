@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Student_GUI.Model
 {
-    public partial class TrangChu : DevExpress.DXperience.Demos.TutorialControlBase  //DevExpress.XtraEditors.XtraUserControl
+    public partial class QLLopHoc : DevExpress.DXperience.Demos.TutorialControlBase  //DevExpress.XtraEditors.XtraUserControl
     {
-        public TrangChu()
+        public QLLopHoc()
         {
             InitializeComponent();
         }
