@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_GUI
+namespace Student_GUI.Model
 {
-    public partial class Main : DevExpress.XtraEditors.XtraForm
+    public partial class QLHocVien : DevExpress.DXperience.Demos.TutorialControlBase  //DevExpress.XtraEditors.XtraUserControl
     {
-        public Main()
+        public QLHocVien()
         {
             InitializeComponent();
         }
