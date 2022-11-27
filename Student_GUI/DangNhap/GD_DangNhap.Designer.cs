@@ -1,6 +1,6 @@
 ﻿namespace Student_GUI
 {
-    partial class LoginForm
+    partial class GD_DangNhap
     {
         /// <summary>
         /// Required designer variable.
@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GD_DangNhap));
             this.pn_Main = new DevExpress.XtraEditors.PanelControl();
-            this.hyperlinkLabelControl2 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.hyperlinkLabelControl1 = new DevExpress.XtraEditors.HyperlinkLabelControl();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.labelMatKhau = new DevExpress.XtraEditors.LabelControl();
+            this.labelTaiKhoan = new DevExpress.XtraEditors.LabelControl();
+            this.hyperlinkLabelDangKy = new DevExpress.XtraEditors.HyperlinkLabelControl();
+            this.hyperlinkLabelQuenMatKhau = new DevExpress.XtraEditors.HyperlinkLabelControl();
+            this.BtnDangNhap = new DevExpress.XtraEditors.SimpleButton();
+            this.labelXinChao = new DevExpress.XtraEditors.LabelControl();
             this.txtPassword = new DevExpress.XtraEditors.TextEdit();
             this.txtUserName = new DevExpress.XtraEditors.TextEdit();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.pn_Main)).BeginInit();
             this.pn_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPassword.Properties)).BeginInit();
@@ -51,12 +51,12 @@
             // 
             // pn_Main
             // 
-            this.pn_Main.Controls.Add(this.labelControl3);
-            this.pn_Main.Controls.Add(this.labelControl2);
-            this.pn_Main.Controls.Add(this.hyperlinkLabelControl2);
-            this.pn_Main.Controls.Add(this.hyperlinkLabelControl1);
-            this.pn_Main.Controls.Add(this.simpleButton1);
-            this.pn_Main.Controls.Add(this.labelControl1);
+            this.pn_Main.Controls.Add(this.labelMatKhau);
+            this.pn_Main.Controls.Add(this.labelTaiKhoan);
+            this.pn_Main.Controls.Add(this.hyperlinkLabelDangKy);
+            this.pn_Main.Controls.Add(this.hyperlinkLabelQuenMatKhau);
+            this.pn_Main.Controls.Add(this.BtnDangNhap);
+            this.pn_Main.Controls.Add(this.labelXinChao);
             this.pn_Main.Controls.Add(this.txtPassword);
             this.pn_Main.Controls.Add(this.txtUserName);
             this.pn_Main.Dock = System.Windows.Forms.DockStyle.Right;
@@ -65,41 +65,61 @@
             this.pn_Main.Size = new System.Drawing.Size(528, 576);
             this.pn_Main.TabIndex = 0;
             // 
-            // hyperlinkLabelControl2
+            // labelMatKhau
             // 
-            this.hyperlinkLabelControl2.Location = new System.Drawing.Point(306, 437);
-            this.hyperlinkLabelControl2.Name = "hyperlinkLabelControl2";
-            this.hyperlinkLabelControl2.Size = new System.Drawing.Size(46, 16);
-            this.hyperlinkLabelControl2.TabIndex = 22;
-            this.hyperlinkLabelControl2.Text = "Đăng ký";
+            this.labelMatKhau.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelMatKhau.Appearance.Options.UseFont = true;
+            this.labelMatKhau.Location = new System.Drawing.Point(39, 264);
+            this.labelMatKhau.Name = "labelMatKhau";
+            this.labelMatKhau.Size = new System.Drawing.Size(86, 28);
+            this.labelMatKhau.TabIndex = 24;
+            this.labelMatKhau.Text = "Mật khẩu";
             // 
-            // hyperlinkLabelControl1
+            // labelTaiKhoan
             // 
-            this.hyperlinkLabelControl1.Location = new System.Drawing.Point(158, 437);
-            this.hyperlinkLabelControl1.Name = "hyperlinkLabelControl1";
-            this.hyperlinkLabelControl1.Size = new System.Drawing.Size(87, 16);
-            this.hyperlinkLabelControl1.TabIndex = 21;
-            this.hyperlinkLabelControl1.Text = "Quên mật khẩu";
+            this.labelTaiKhoan.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTaiKhoan.Appearance.Options.UseFont = true;
+            this.labelTaiKhoan.Location = new System.Drawing.Point(38, 201);
+            this.labelTaiKhoan.Name = "labelTaiKhoan";
+            this.labelTaiKhoan.Size = new System.Drawing.Size(87, 28);
+            this.labelTaiKhoan.TabIndex = 23;
+            this.labelTaiKhoan.Text = "Tài khoản";
             // 
-            // simpleButton1
+            // hyperlinkLabelDangKy
             // 
-            this.simpleButton1.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.simpleButton1.Appearance.Options.UseFont = true;
-            this.simpleButton1.Location = new System.Drawing.Point(143, 331);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(296, 51);
-            this.simpleButton1.TabIndex = 20;
-            this.simpleButton1.Text = "Đăng nhập";
+            this.hyperlinkLabelDangKy.Location = new System.Drawing.Point(366, 467);
+            this.hyperlinkLabelDangKy.Name = "hyperlinkLabelDangKy";
+            this.hyperlinkLabelDangKy.Size = new System.Drawing.Size(46, 16);
+            this.hyperlinkLabelDangKy.TabIndex = 22;
+            this.hyperlinkLabelDangKy.Text = "Đăng ký";
             // 
-            // labelControl1
+            // hyperlinkLabelQuenMatKhau
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(209, 104);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(117, 37);
-            this.labelControl1.TabIndex = 17;
-            this.labelControl1.Text = "Xin chào,";
+            this.hyperlinkLabelQuenMatKhau.Location = new System.Drawing.Point(156, 467);
+            this.hyperlinkLabelQuenMatKhau.Name = "hyperlinkLabelQuenMatKhau";
+            this.hyperlinkLabelQuenMatKhau.Size = new System.Drawing.Size(97, 16);
+            this.hyperlinkLabelQuenMatKhau.TabIndex = 21;
+            this.hyperlinkLabelQuenMatKhau.Text = "Quên mật khẩu ?";
+            // 
+            // BtnDangNhap
+            // 
+            this.BtnDangNhap.Appearance.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnDangNhap.Appearance.Options.UseFont = true;
+            this.BtnDangNhap.Location = new System.Drawing.Point(143, 331);
+            this.BtnDangNhap.Name = "BtnDangNhap";
+            this.BtnDangNhap.Size = new System.Drawing.Size(296, 51);
+            this.BtnDangNhap.TabIndex = 20;
+            this.BtnDangNhap.Text = "Đăng nhập";
+            // 
+            // labelXinChao
+            // 
+            this.labelXinChao.Appearance.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelXinChao.Appearance.Options.UseFont = true;
+            this.labelXinChao.Location = new System.Drawing.Point(209, 104);
+            this.labelXinChao.Name = "labelXinChao";
+            this.labelXinChao.Size = new System.Drawing.Size(117, 37);
+            this.labelXinChao.TabIndex = 17;
+            this.labelXinChao.Text = "Xin chào,";
             // 
             // txtPassword
             // 
@@ -139,34 +159,14 @@
             this.pictureEdit1.Size = new System.Drawing.Size(515, 572);
             this.pictureEdit1.TabIndex = 0;
             // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(38, 201);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(87, 28);
-            this.labelControl2.TabIndex = 23;
-            this.labelControl2.Text = "Tài khoản";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(39, 264);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(86, 28);
-            this.labelControl3.TabIndex = 24;
-            this.labelControl3.Text = "Mật khẩu";
-            // 
-            // LoginForm
+            // DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1045, 576);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.pn_Main);
-            this.Name = "LoginForm";
+            this.Name = "DangNhap";
             this.Text = "Đăng nhập";
             ((System.ComponentModel.ISupportInitialize)(this.pn_Main)).EndInit();
             this.pn_Main.ResumeLayout(false);
@@ -182,15 +182,15 @@
 
         #endregion
         private DevExpress.XtraEditors.PanelControl pn_Main;
-        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl2;
-        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelControl1;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
+        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelDangKy;
+        private DevExpress.XtraEditors.HyperlinkLabelControl hyperlinkLabelQuenMatKhau;
+        private DevExpress.XtraEditors.SimpleButton BtnDangNhap;
+        private DevExpress.XtraEditors.LabelControl labelXinChao;
         private DevExpress.XtraEditors.TextEdit txtPassword;
         private DevExpress.XtraEditors.TextEdit txtUserName;
         private DevExpress.XtraEditors.PanelControl panelControl1;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelMatKhau;
+        private DevExpress.XtraEditors.LabelControl labelTaiKhoan;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
     }
 }

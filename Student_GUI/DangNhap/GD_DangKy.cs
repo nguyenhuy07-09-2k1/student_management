@@ -9,13 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_GUI.Model
+namespace Student_GUI.DangNhap
 {
-    public partial class QLGiaoVien : DevExpress.DXperience.Demos.TutorialControlBase  //DevExpress.XtraEditors.XtraUserControl
+    public partial class GD_DangKy : DevExpress.XtraEditors.XtraForm
     {
-        public QLGiaoVien()
+        public GD_DangKy()
         {
             InitializeComponent();
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

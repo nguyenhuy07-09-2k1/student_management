@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Student_GUI
 {
-    public partial class LoginForm : DevExpress.XtraEditors.XtraForm
+    public partial class GD_DangNhap : DevExpress.XtraEditors.XtraForm
     {
-        public LoginForm()
+        public GD_DangNhap()
         {
             InitializeComponent();
         }

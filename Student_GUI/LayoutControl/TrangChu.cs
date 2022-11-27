@@ -9,18 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_GUI.DangNhap
+namespace Student_GUI.LayoutControl
 {
-    public partial class DangKy : DevExpress.XtraEditors.XtraForm
+    public partial class TrangChu : DevExpress.XtraEditors.XtraUserControl
     {
-        public DangKy()
+        public TrangChu()
         {
             InitializeComponent();
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

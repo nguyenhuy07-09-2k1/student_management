@@ -9,11 +9,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Student_GUI.Model
+namespace Student_GUI.LayoutControl
 {
-    public partial class QLLopHoc : DevExpress.DXperience.Demos.TutorialControlBase  //DevExpress.XtraEditors.XtraUserControl
+    public partial class QL_HocVien : DevExpress.XtraEditors.XtraUserControl
     {
-        public QLLopHoc()
+        public QL_HocVien()
         {
             InitializeComponent();
         }

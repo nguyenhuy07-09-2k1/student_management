@@ -1,7 +1,7 @@
 ﻿using DevExpress.DXperience.Demos;
 using DevExpress.DXperience.Demos.CodeDemo.Data;
 using DevExpress.XtraBars;
-using Student_GUI.Model;
+using Student_GUI.LayoutControl;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,11 +63,11 @@ namespace Student_GUI
         private async void accordionControlElement4_Click(object sender, EventArgs e)
         {
             this.barHeaderItem1.Caption = $"{accordionControlElement4.Text}";
-            if(ModulesInfo.GetItem("QLLopHoc") == null)
+            if(ModulesInfo.GetItem("QL_LopHoc") == null)
             {
-                ModulesInfo.Add(new ModuleInfo("QLLopHoc", "Student_GUI.Model.QLLopHoc"));
+                ModulesInfo.Add(new ModuleInfo("QL_LopHoc", "Student_GUI.LayoutControl.QL_LopHoc"));
             }
-            await LoadModuleAsync(ModulesInfo.GetItem("QLLopHoc"));
+            await LoadModuleAsync(ModulesInfo.GetItem("QL_LopHoc"));
         }
 
         private async void accordionControlElement1_Click(object sender, EventArgs e)
@@ -75,7 +75,7 @@ namespace Student_GUI
             this.barHeaderItem1.Caption = $"{accordionControlElement1.Text}";
             if (ModulesInfo.GetItem("TrangChu") == null)
             {
-                ModulesInfo.Add(new ModuleInfo("TrangChu", "Student_GUI.Model.TrangChu"));
+                ModulesInfo.Add(new ModuleInfo("TrangChu", "Student_GUI.LayoutControl.TrangChu"));
             }
             await LoadModuleAsync(ModulesInfo.GetItem("TrangChu"));
         }
@@ -83,21 +83,21 @@ namespace Student_GUI
         private async void accordionControlElement2_Click(object sender, EventArgs e)
         {
             this.barHeaderItem1.Caption = $"{accordionControlElement2.Text}";
-            if (ModulesInfo.GetItem("QLHocVien") == null)
+            if (ModulesInfo.GetItem("QL_HocVien") == null)
             {
-                ModulesInfo.Add(new ModuleInfo("QLHocVien", "Student_GUI.Model.QLHocVien"));
+                ModulesInfo.Add(new ModuleInfo("QL_HocVien", "Student_GUI.LayoutControl.QL_HocVien"));
             }
-            await LoadModuleAsync(ModulesInfo.GetItem("QLHocVien"));
+            await LoadModuleAsync(ModulesInfo.GetItem("QL_HocVien"));
         }
 
         private async void accordionControlElement3_Click(object sender, EventArgs e)
         {
             this.barHeaderItem1.Caption = $"{accordionControlElement2.Text}";
-            if (ModulesInfo.GetItem("QLGiaoVien") == null)
+            if (ModulesInfo.GetItem("QL_GiaoVien") == null)
             {
-                ModulesInfo.Add(new ModuleInfo("QLGiaoVien", "Student_GUI.Model.QLGiaoVien"));
+                ModulesInfo.Add(new ModuleInfo("QL_GiaoVien", "Student_GUI.LayoutControl.QL_GiaoVien"));
             }
-            await LoadModuleAsync(ModulesInfo.GetItem("QLGiaoVien"));
+            await LoadModuleAsync(ModulesInfo.GetItem("QL_GiaoVien"));
         }
     }
 }
