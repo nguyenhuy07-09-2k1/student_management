@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Student_GUI.LayoutControl
 {
-    public partial class QL_HocVien : DevExpress.XtraEditors.XtraUserControl
+    public partial class QL_HocVien : DevExpress.DXperience.Demos.TutorialControlBase //DevExpress.XtraEditors.XtraUserControl
     {
         public QL_HocVien()
         {

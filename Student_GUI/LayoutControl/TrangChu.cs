@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Student_GUI.LayoutControl
 {
-    public partial class TrangChu : DevExpress.XtraEditors.XtraUserControl
+    public partial class TrangChu : DevExpress.DXperience.Demos.TutorialControlBase //DevExpress.XtraEditors.XtraUserControl
     {
         public TrangChu()
         {
