@@ -38,19 +38,25 @@
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.barHeaderItem1 = new DevExpress.XtraBars.BarHeaderItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
+            this.toolbarFormManager1 = new DevExpress.XtraBars.ToolbarForm.ToolbarFormManager(this.components);
+            this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
+            this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolbarFormManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // fluentDesignFormContainer1
             // 
             this.fluentDesignFormContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(409, 37);
-            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.fluentDesignFormContainer1.Location = new System.Drawing.Point(48, 31);
+            this.fluentDesignFormContainer1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.fluentDesignFormContainer1.Name = "fluentDesignFormContainer1";
-            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(680, 615);
+            this.fluentDesignFormContainer1.Size = new System.Drawing.Size(847, 593);
             this.fluentDesignFormContainer1.TabIndex = 0;
             // 
             // accordionControl1
@@ -61,11 +67,13 @@
             this.accordionControlElement2,
             this.accordionControlElement3,
             this.accordionControlElement4});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 37);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.accordionControl1.Name = "accordionControl1";
+            this.accordionControl1.OptionsMinimizing.State = DevExpress.XtraBars.Navigation.AccordionControlState.Minimized;
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(409, 615);
+            this.accordionControl1.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Auto;
+            this.accordionControl1.Size = new System.Drawing.Size(48, 593);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -76,6 +84,7 @@
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons),
             new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image, DevExpress.XtraBars.Navigation.HeaderElementAlignment.Right)});
+            this.accordionControlElement1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement1.ImageOptions.Image")));
             this.accordionControlElement1.Name = "accordionControlElement1";
             this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement1.Text = "Trang chủ";
@@ -83,6 +92,7 @@
             // 
             // accordionControlElement2
             // 
+            this.accordionControlElement2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement2.ImageOptions.Image")));
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement2.Text = "Quản lý học viên";
@@ -90,6 +100,7 @@
             // 
             // accordionControlElement3
             // 
+            this.accordionControlElement3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement3.ImageOptions.Image")));
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement3.Text = "Quản lý giáo viên";
@@ -97,6 +108,7 @@
             // 
             // accordionControlElement4
             // 
+            this.accordionControlElement4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement4.ImageOptions.Image")));
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement4.Text = "Quản lý lớp học";
@@ -115,38 +127,83 @@
             this.barHeaderItem1});
             this.fluentFormDefaultManager1.MaxItemId = 1;
             // 
+            // toolbarFormManager1
+            // 
+            this.toolbarFormManager1.DockControls.Add(this.barDockControlTop);
+            this.toolbarFormManager1.DockControls.Add(this.barDockControlBottom);
+            this.toolbarFormManager1.DockControls.Add(this.barDockControlLeft);
+            this.toolbarFormManager1.DockControls.Add(this.barDockControlRight);
+            this.toolbarFormManager1.Form = this;
+            // 
+            // barDockControlTop
+            // 
+            this.barDockControlTop.CausesValidation = false;
+            this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barDockControlTop.Location = new System.Drawing.Point(0, 31);
+            this.barDockControlTop.Manager = this.toolbarFormManager1;
+            this.barDockControlTop.Size = new System.Drawing.Size(895, 0);
+            // 
+            // barDockControlBottom
+            // 
+            this.barDockControlBottom.CausesValidation = false;
+            this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 624);
+            this.barDockControlBottom.Manager = this.toolbarFormManager1;
+            this.barDockControlBottom.Size = new System.Drawing.Size(895, 0);
+            // 
+            // barDockControlLeft
+            // 
+            this.barDockControlLeft.CausesValidation = false;
+            this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barDockControlLeft.Location = new System.Drawing.Point(0, 31);
+            this.barDockControlLeft.Manager = this.toolbarFormManager1;
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 593);
+            // 
+            // barDockControlRight
+            // 
+            this.barDockControlRight.CausesValidation = false;
+            this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
+            this.barDockControlRight.Location = new System.Drawing.Point(895, 31);
+            this.barDockControlRight.Manager = this.toolbarFormManager1;
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 593);
+            // 
             // fluentDesignFormControl1
             // 
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1089, 37);
-            this.fluentDesignFormControl1.TabIndex = 2;
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(895, 31);
+            this.fluentDesignFormControl1.TabIndex = 6;
             this.fluentDesignFormControl1.TabStop = false;
             // 
             // GiaoDienChinh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1089, 652);
+            this.ClientSize = new System.Drawing.Size(895, 624);
             this.ControlContainer = this.fluentDesignFormContainer1;
             this.Controls.Add(this.fluentDesignFormContainer1);
             this.Controls.Add(this.accordionControl1);
+            this.Controls.Add(this.barDockControlLeft);
+            this.Controls.Add(this.barDockControlRight);
+            this.Controls.Add(this.barDockControlBottom);
+            this.Controls.Add(this.barDockControlTop);
             this.Controls.Add(this.fluentDesignFormControl1);
+            this.DoubleBuffered = true;
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
+            this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("GiaoDienChinh.IconOptions.LargeImage")));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "GiaoDienChinh";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Trang chủ";
             this.Load += new System.EventHandler(this.GiaoDienChinh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toolbarFormManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -159,6 +216,11 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.BarHeaderItem barHeaderItem1;
+        private DevExpress.XtraBars.ToolbarForm.ToolbarFormManager toolbarFormManager1;
+        private DevExpress.XtraBars.BarDockControl barDockControlTop;
+        private DevExpress.XtraBars.BarDockControl barDockControlBottom;
+        private DevExpress.XtraBars.BarDockControl barDockControlLeft;
+        private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl fluentDesignFormControl1;
     }
 }
