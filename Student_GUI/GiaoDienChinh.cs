@@ -69,6 +69,15 @@ namespace Student_GUI
             }
             await LoadModuleAsync(ModulesInfo.GetItem("QL_LopHoc"));
         }
+        private async void accordionControlElement5_Click(object sender, EventArgs e)
+        {
+            this.barHeaderItem1.Caption = $"{accordionControlElement5.Text}";
+            if (ModulesInfo.GetItem("XtraUserControl1") == null)
+            {
+                ModulesInfo.Add(new ModuleInfo("XtraUserControl1", "Student_GUI.ex.XtraUserControl1"));
+            }
+            await LoadModuleAsync(ModulesInfo.GetItem("XtraUserControl1"));
+        }
 
         private async void accordionControlElement1_Click(object sender, EventArgs e)
         {
@@ -98,6 +107,16 @@ namespace Student_GUI
                 ModulesInfo.Add(new ModuleInfo("QL_GiaoVien", "Student_GUI.LayoutControl.QL_GiaoVien"));
             }
             await LoadModuleAsync(ModulesInfo.GetItem("QL_GiaoVien"));
+        }
+
+        private async void accordionControlElement5_Click_1(object sender, EventArgs e)
+        {
+            this.barHeaderItem1.Caption = $"{accordionControlElement2.Text}";
+            if (ModulesInfo.GetItem("XtraUserControl1") == null)
+            {
+                ModulesInfo.Add(new ModuleInfo("XtraUserControl1", "Student_GUI.ex.XtraUserControl1"));
+            }
+            await LoadModuleAsync(ModulesInfo.GetItem("XtraUserControl1"));
         }
     }
 }

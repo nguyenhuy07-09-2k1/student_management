@@ -12,7 +12,7 @@ namespace Student_GUI
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MONHOC()
         {
-            LOPHOC = new HashSet<LOPHOC>();
+            LOPHOCs = new HashSet<LOPHOC>();
         }
 
         [Key]
@@ -32,6 +32,6 @@ namespace Student_GUI
         public virtual KHOA_HOC KHOA_HOC { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<LOPHOC> LOPHOC { get; set; }
+        public virtual ICollection<LOPHOC> LOPHOCs { get; set; }
     }
 }

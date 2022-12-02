@@ -94,6 +94,17 @@
     <Compile Include="DangNhap\GD_DangKy.Designer.cs">
       <DependentUpon>GD_DangKy.cs</DependentUpon>
     </Compile>
+    <Compile Include="ex\student.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>student.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="ex\XtraUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ex\XtraUserControl1.Designer.cs">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDienChinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +146,9 @@
     <EmbeddedResource Include="DangNhap\GD_DangKy.resx">
       <DependentUpon>GD_DangKy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ex\XtraUserControl1.resx">
+      <DependentUpon>XtraUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaoDienChinh.resx">
       <DependentUpon>GiaoDienChinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -163,6 +177,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ex\student.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>student.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ex\student.dbml.layout">
+      <DependentUpon>student.dbml</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -176,6 +198,38 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
