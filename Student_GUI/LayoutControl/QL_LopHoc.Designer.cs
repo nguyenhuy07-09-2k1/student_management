@@ -43,6 +43,7 @@
             this.BtnSave = new DevExpress.XtraEditors.SimpleButton();
             this.BtnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.BtnDownload = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.tabbedControlGroup1 = new DevExpress.XtraLayout.TabbedControlGroup();
@@ -61,6 +62,7 @@
             this.layoutControlItem8 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
@@ -91,6 +93,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,6 +110,7 @@
             this.layoutControl1.Controls.Add(this.BtnSave);
             this.layoutControl1.Controls.Add(this.BtnDelete);
             this.layoutControl1.Controls.Add(this.BtnDownload);
+            this.layoutControl1.Controls.Add(this.simpleButton1);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
             this.layoutControl1.Name = "layoutControl1";
@@ -165,6 +169,8 @@
             // 
             this.textEditSoLuong.Location = new System.Drawing.Point(868, 53);
             this.textEditSoLuong.Name = "textEditSoLuong";
+            this.textEditSoLuong.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.textEditSoLuong.Properties.MaskSettings.Set("mask", "d");
             this.textEditSoLuong.Size = new System.Drawing.Size(234, 32);
             this.textEditSoLuong.StyleController = this.layoutControl1;
             this.textEditSoLuong.TabIndex = 11;
@@ -211,13 +217,15 @@
             this.BtnSave.Location = new System.Drawing.Point(746, 198);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
-            this.BtnSave.Size = new System.Drawing.Size(356, 36);
+            this.BtnSave.Size = new System.Drawing.Size(176, 36);
             this.BtnSave.StyleController = this.layoutControl1;
             this.BtnSave.TabIndex = 19;
             this.BtnSave.Text = "Lưu";
             // 
             // BtnDelete
             // 
+            this.BtnDelete.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.BtnDelete.Appearance.Options.UseForeColor = true;
             this.BtnDelete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnDelete.ImageOptions.Image")));
             this.BtnDelete.Location = new System.Drawing.Point(567, 198);
             this.BtnDelete.Name = "BtnDelete";
@@ -237,6 +245,17 @@
             this.BtnDownload.StyleController = this.layoutControl1;
             this.BtnDownload.TabIndex = 21;
             this.BtnDownload.Text = "Tải xuống";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.simpleButton1.Location = new System.Drawing.Point(926, 198);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.PaintStyle = DevExpress.XtraEditors.Controls.PaintStyles.Light;
+            this.simpleButton1.Size = new System.Drawing.Size(176, 36);
+            this.simpleButton1.StyleController = this.layoutControl1;
+            this.simpleButton1.TabIndex = 22;
+            this.simpleButton1.Text = "Xóa";
             // 
             // Root
             // 
@@ -299,7 +318,8 @@
             this.emptySpaceItem2,
             this.layoutControlItem8,
             this.layoutControlItem10,
-            this.emptySpaceItem3});
+            this.emptySpaceItem3,
+            this.layoutControlItem6});
             this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "LayoutRootGroupForRestore";
             this.layoutControlGroup1.Size = new System.Drawing.Size(1083, 188);
@@ -399,7 +419,7 @@
             this.layoutControlItem7.Control = this.BtnSave;
             this.layoutControlItem7.Location = new System.Drawing.Point(723, 145);
             this.layoutControlItem7.Name = "layoutControlItem7";
-            this.layoutControlItem7.Size = new System.Drawing.Size(360, 43);
+            this.layoutControlItem7.Size = new System.Drawing.Size(180, 43);
             this.layoutControlItem7.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem7.TextVisible = false;
             // 
@@ -454,6 +474,15 @@
             this.emptySpaceItem3.SizeConstraintsType = DevExpress.XtraLayout.SizeConstraintsType.Custom;
             this.emptySpaceItem3.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // layoutControlItem6
+            // 
+            this.layoutControlItem6.Control = this.simpleButton1;
+            this.layoutControlItem6.Location = new System.Drawing.Point(903, 145);
+            this.layoutControlItem6.Name = "layoutControlItem6";
+            this.layoutControlItem6.Size = new System.Drawing.Size(180, 43);
+            this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem6.TextVisible = false;
+            // 
             // QL_LopHoc
             // 
             this.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F);
@@ -492,6 +521,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ResumeLayout(false);
 
@@ -531,5 +561,7 @@
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem10;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
     }
 }
