@@ -11,7 +11,7 @@ namespace Student_GUI
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KHOA_HOC()
         {
-            MONHOC = new HashSet<MONHOC>();
+            MONHOCs = new HashSet<MONHOC>();
         }
 
         [Key]
@@ -29,6 +29,6 @@ namespace Student_GUI
         public DateTime NGAYKT { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MONHOC> MONHOC { get; set; }
+        public virtual ICollection<MONHOC> MONHOCs { get; set; }
     }
 }

@@ -12,8 +12,8 @@ namespace Student_GUI
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public PHONGHOC()
         {
-            TINHTRANGPHONG = new HashSet<TINHTRANGPHONG>();
-            THI = new HashSet<THI>();
+            THIs = new HashSet<THI>();
+            TINHTRANGPHONGs = new HashSet<TINHTRANGPHONG>();
         }
 
         [Key]
@@ -25,9 +25,9 @@ namespace Student_GUI
         public string TENPHONG { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TINHTRANGPHONG> TINHTRANGPHONG { get; set; }
+        public virtual ICollection<THI> THIs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<THI> THI { get; set; }
+        public virtual ICollection<TINHTRANGPHONG> TINHTRANGPHONGs { get; set; }
     }
 }

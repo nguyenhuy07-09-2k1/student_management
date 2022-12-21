@@ -11,7 +11,7 @@ namespace Student_GUI
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HOC_VIEN()
         {
-            THI = new HashSet<THI>();
+            THIs = new HashSet<THI>();
             BIEN_LAI = new HashSet<BIEN_LAI>();
         }
 
@@ -41,7 +41,7 @@ namespace Student_GUI
         public string NGHENGHIEP { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<THI> THI { get; set; }
+        public virtual ICollection<THI> THIs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BIEN_LAI> BIEN_LAI { get; set; }
